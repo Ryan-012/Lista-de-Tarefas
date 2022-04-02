@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon/lista.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Lista de Tarefas</title>
+  </head>
+  <body>
+    <div class="tarefas">
+      <h1>Sua lista de tarefas</h1>
+      <button id="limpar" onclick="removerTudo()">Limpar Tudo</button>
+      <input
+        type="text"
+        onfocus="this.value=''"
+        id="tarefa"
+        placeholder="Digite sua Tarefa..."
+      />
+      <button id="add" onclick="tarefaAdd()">Adicionar</button>
+
+      <ul id="lista"></ul>
+    </div>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
